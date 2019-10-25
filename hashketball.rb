@@ -312,7 +312,7 @@ def long_name_steals_a_ton?
        team_data.each do |attributes, data| 
          if attributes == :players 
            data.each do |player| 
-             if player[:steals] > points
+             if player[:steals] > steals
                steals = player[:steals]
                name = player[:players_name]
              end   
