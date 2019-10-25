@@ -274,8 +274,7 @@ def winning_team
            end 
          end 
        end 
-     end 
-  end   
+   end
  binding.pry 
 team_one
 end  
