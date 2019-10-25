@@ -284,3 +284,21 @@ if team_one > team_two
 end
  
 end  
+
+def player_with_longest_name
+  name = ""     
+  
+     game_hash.each do |team_location, team_data|
+       team_data.each do |attributes, data| 
+         if attributes == :players 
+           data.each do |player| 
+             if player[:name].length > name
+               name = player[:players_name]
+             end   
+           end 
+         end 
+       end 
+     end 
+     
+  name
+end 
