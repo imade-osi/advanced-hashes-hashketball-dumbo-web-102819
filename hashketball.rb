@@ -275,7 +275,7 @@ def winning_team
          end 
        end 
    end
- binding.pry 
  
-team_one
+if team_one > team_two 
+  return ""
 end  
